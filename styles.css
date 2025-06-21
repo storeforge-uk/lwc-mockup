@@ -68,7 +68,7 @@ nav {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 8px;
+    padding: 0 0px;
 }
 
 .nav-content {

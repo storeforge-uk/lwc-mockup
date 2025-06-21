@@ -66,9 +66,9 @@ nav {
 }
 
 .nav-container {
-    max-width: 85vw;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 0px;
 }
 
 .nav-content {

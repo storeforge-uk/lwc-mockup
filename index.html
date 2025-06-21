@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latchi Watersports Center - Premium Boat Hire & Water Activities in Cyprus</title>
+    <meta name="description" content="Cyprus' premier watersports destination since 1978. Experience boat hire, yacht charters, diving, and watersports in the pristine waters of Latchi Harbour. Book your Mediterranean adventure today.">
+    <meta property="og:title" content="Latchi Watersports Center - Premium Boat Hire & Water Activities in Cyprus">
+    <meta property="og:description" content="Cyprus' premier watersports destination since 1978. Experience boat hire, yacht charters, diving, and watersports in the pristine waters of Latchi Harbour.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="nav-transparent">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-text">
+                        LATCHI<span class="logo-accent">WATERSPORTS</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#activities" class="nav-link">Activities</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#testimonials" class="nav-link">Reviews</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#book-now" class="btn btn-primary">Book Now</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="nav-mobile">
+                    <button id="mobile-menu-btn" class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <button id="mobile-menu-close" class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#activities" class="mobile-nav-link">Activities</a>
+                <a href="#gallery" class="mobile-nav-link">Gallery</a>
+                <a href="#testimonials" class="mobile-nav-link">Reviews</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <a href="#book-now" class="btn btn-primary mobile-book-btn">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <img src="./assets/travelers-choice-2023.png" alt="Travelers' Choice 2023" class="award-badge">
+            </div>
+            
+            <h1 class="hero-title">
+                Cyprus Premier<br><span class="hero-accent">Watersports</span> Center
+            </h1>
+            
+            <p class="hero-subtitle">
+                "Where the fun ends, the land begins."
+            </p>
+            
+            <p class="hero-description">
+                Experience the ultimate Mediterranean adventure since 1978. Premium boat hire, yacht charters, diving expeditions, and watersports in the pristine waters of Latchi Harbour.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-large" onclick="handleBooking('Boat Hire')">
+                    <i class="fas fa-ship"></i>Boat Hire
+                </button>
+                <button class="btn btn-secondary btn-large" onclick="handleBooking('Diving')">
+                    <i class="fas fa-swimming-pool"></i>Diving
+                </button>
+            </div>
+            
+            <div class="hero-info">
+                <div class="hero-info-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Open Daily 09:00 – 17:00</span>
+                </div>
+                <div class="hero-info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+357 26 322 095</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Our <span class="text-accent">Activities</span>
+                </h2>
+                <p class="section-description">
+                    Discover the complete range of premium watersports and marine services in the heart of Cyprus' most beautiful coastal region.
+                </p>
+            </div>
+            
+            <div class="activities-grid">
+                <!-- Activity Cards -->
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Boat Hire" class="activity-image">
+                    <div class="activity-content">
+                        <div class="activity-header">
+                            <i class="fas fa-ship activity-icon"></i>
+                            <h3 class="activity-title">Boat Hire</h3>
+                        </div>
+                        <p class="activity-description">Premium fleet of modern boats for exploring Cyprus' pristine coastline at your own pace.</p>
+                        <button class="activity-link" onclick="handleBooking('Boat Hire')">
+                            Book Now <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Yacht Charters" class="activity-image">
+                    <div class="activity-content">
+                        <div class="activity-header">
+                            <i class="fas fa-anchor activity-icon"></i>
+                            <h3 class="activity-title">Yacht Charters</h3>
+                        </div>
+                        <p class="activity-description">Luxury yacht experiences with professional crew for unforgettable Mediterranean adventures.</p>
+                        <button class="activity-link" onclick="handleBooking('Yacht Charters')">
+                            Book Now <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Diving" class="activity-image">
+                    <div class="activity-content">
+                        <div class="activity-header">
+                            <i class="fas fa-swimming-pool activity-icon"></i>
+                            <h3 class="activity-title">Diving</h3>
+                        </div>
+                        <p class="activity-description">Explore Cyprus' underwater treasures with certified instructors and professional equipment.</p>
+                        <button class="activity-link" onclick="handleBooking('Diving')">
+                            Book Now <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1581852017103-68ac65514cf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Watersports" class="activity-image">
+                    <div class="activity-content">
+                        <div class="activity-header">
+                            <i class="fas fa-water activity-icon"></i>
+                            <h3 class="activity-title">Watersports</h3>
+                        </div>
+                        <p class="activity-description">Thrilling jet ski adventures, wakeboarding, and water skiing for adrenaline seekers.</p>
+                        <button class="activity-link" onclick="handleBooking('Watersports')">
+                            Book Now <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Boat Sales" class="activity-image">
+                    <div class="activity-content">
+                        <div class="activity-header">
+                            <i class="fas fa-handshake activity-icon"></i>
+                            <h3 class="activity-title">Boat Sales</h3>
+                        </div>
+                        <p class="activity-description">Premium new and pre-owned boats from leading manufacturers with expert guidance.</p>
+                        <button class="activity-link" onclick="scrollToSection('contact')">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Company Heritage -->
+            <div class="heritage-section">
+                <h3 class="heritage-title">Since 1978</h3>
+                <p class="heritage-description">
+                    Over four decades of excellence in Cyprus watersports. Family-owned and operated, we've been creating unforgettable Mediterranean memories for generations of visitors and locals alike.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Experience <span class="text-accent">Gallery</span>
+                </h2>
+                <p class="section-description">
+                    Discover the beauty and excitement that awaits you in Cyprus' premier watersports destination.
+                </p>
+            </div>
+            
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Boat in crystal clear waters">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Luxury yacht charter">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Diving adventure">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1581852017103-68ac65514cf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Jet ski watersports">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Cyprus coastline">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Mediterranean sunset">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    What Our <span class="text-accent">Guests Say</span>
+                </h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Absolutely incredible experience! The boat was pristine, the staff professional, and the Cyprus coastline breathtaking. Best watersports center we've ever used!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100" alt="Customer" class="author-image">
+                        <div class="author-info">
+                            <p class="author-name">Sarah & James M.</p>
+                            <p class="author-location">UK Visitors</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Five-star diving experience! The instructors were amazing, equipment top-notch, and the underwater sights unforgettable. Thank you for an amazing day!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100" alt="Customer" class="author-image">
+                        <div class="author-info">
+                            <p class="author-name">Michael R.</p>
+                            <p class="author-location">German Tourist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Perfect family day out! The yacht charter exceeded all expectations. Professional crew, stunning locations, and memories that will last forever!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100" alt="Customer" class="author-image">
+                        <div class="author-info">
+                            <p class="author-name">Elena P.</p>
+                            <p class="author-location">Local Family</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book-now" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Book Your <span class="text-accent">Adventure</span>
+                </h2>
+                <p class="section-description">
+                    Ready to experience the ultimate Mediterranean adventure? Choose your preferred activity and book instantly online.
+                </p>
+            </div>
+            
+            <div class="booking-grid">
+                <button class="booking-card booking-card-primary" onclick="handleBooking('Boat Hire')">
+                    <i class="fas fa-ship booking-icon"></i>
+                    <div class="booking-title">Book Boat Hire</div>
+                    <div class="booking-price">From €150/day</div>
+                </button>
+                <button class="booking-card" onclick="handleBooking('Diving')">
+                    <i class="fas fa-swimming-pool booking-icon"></i>
+                    <div class="booking-title">Book Diving</div>
+                    <div class="booking-price">From €65/dive</div>
+                </button>
+                <button class="booking-card" onclick="handleBooking('Yacht Charter')">
+                    <i class="fas fa-anchor booking-icon"></i>
+                    <div class="booking-title">Yacht Charters</div>
+                    <div class="booking-price">From €450/day</div>
+                </button>
+                <button class="booking-card" onclick="handleBooking('Watersports')">
+                    <i class="fas fa-water booking-icon"></i>
+                    <div class="booking-title">Watersports</div>
+                    <div class="booking-price">From €45/hour</div>
+                </button>
+            </div>
+            
+            <div class="booking-help">
+                <h3 class="booking-help-title">Need Help Choosing?</h3>
+                <p class="booking-help-description">Our experienced team is here to help you plan the perfect Cyprus watersports experience.</p>
+                <div class="booking-help-actions">
+                    <a href="tel:+35726322095" class="booking-help-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+357 26 322 095</span>
+                    </a>
+                    <a href="#contact" class="booking-help-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Send Message</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Visit <span class="text-accent">Us</span>
+                </h2>
+                <p class="section-description">
+                    Located in the heart of Latchi Harbour, we're easy to find and ready to help plan your perfect watersports adventure.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3 class="contact-title">Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div>
+                                <h4 class="contact-label">Address</h4>
+                                <p class="contact-detail">
+                                    Latchi Watersports Center<br>
+                                    Latchi Harbour<br>
+                                    Polis Chrysochous<br>
+                                    Paphos CY-8830, Cyprus
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div>
+                                <h4 class="contact-label">Phone</h4>
+                                <a href="tel:+35726322095" class="contact-detail contact-link">+357 26 322 095</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <div>
+                                <h4 class="contact-label">Opening Hours</h4>
+                                <p class="contact-detail">
+                                    Open Daily<br>
+                                    09:00 – 17:00
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-calendar-alt contact-icon"></i>
+                            <div>
+                                <h4 class="contact-label">Season</h4>
+                                <p class="contact-detail">
+                                    Operating year-round<br>
+                                    Peak season: April - October
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter Signup -->
+                    <div class="newsletter-card">
+                        <h3 class="newsletter-title">Stay Updated</h3>
+                        <p class="newsletter-description">Get the latest news, special offers, and exclusive watersports packages delivered to your inbox.</p>
+                        
+                        <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                            <input type="email" id="email" placeholder="Enter your email address" class="newsletter-input" required>
+                            <button type="submit" class="newsletter-btn">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Google Maps -->
+                <div class="map-card">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2159844598434!2d32.34578831521408!3d35.04077798035842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e0686a3b7e5c99%3A0x9b7b7b7b7b7b7b7b!2sLatchi%20Harbour%2C%20Cyprus!5e0!3m2!1sen!2s!4v1640000000000!5m2!1sen!2s"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Latchi Harbour Cyprus Location">
+                        </iframe>
+                    </div>
+                    <div class="map-info">
+                        <h3 class="map-title">Find Us</h3>
+                        <p class="map-description">
+                            <strong>Latchi Watersports Center</strong><br>
+                            Latchi Harbour, Polis Chrysochous<br>
+                            Paphos CY-8830, Cyprus
+                        </p>
+                        <p class="map-details">Located at the scenic Latchi Harbour, just 20 minutes from Polis and 45 minutes from Paphos Airport.</p>
+                        <a href="https://maps.google.com/?q=Latchi+Harbour+Cyprus" target="_blank" rel="noopener noreferrer" class="map-link">
+                            Get Directions <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        LATCHI<span class="footer-logo-accent">WATERSPORTS</span>
+                    </div>
+                    <p class="footer-description">
+                        Cyprus' premier watersports destination since 1978. Experience the ultimate Mediterranean adventure with our professional team and premium equipment.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-tripadvisor"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#activities" class="footer-link">Boat Hire</a></li>
+                        <li><a href="#activities" class="footer-link">Yacht Charters</a></li>
+                        <li><a href="#activities" class="footer-link">Diving</a></li>
+                        <li><a href="#activities" class="footer-link">Watersports</a></li>
+                        <li><a href="#activities" class="footer-link">Boat Sales</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact</h3>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                Latchi Harbour<br>
+                                Polis Chrysochous<br>
+                                Paphos CY-8830, Cyprus
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+35726322095">+357 26 322 095</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Daily 09:00 – 17:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2023 Latchi Watersports Center. All rights reserved. Operating since 1978.
+                </div>
+                <div class="footer-legal">
+                    <a href="#" class="footer-legal-link">Privacy Policy</a>
+                    <a href="#" class="footer-legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

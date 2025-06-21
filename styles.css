@@ -78,10 +78,18 @@ nav {
     height: 80px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-left: 0;
+}
 .logo-img {
-    height: 60px;  /* Adjust as needed */
+    height: 48px;
     width: auto;
     display: block;
+    object-fit: contain;
+    vertical-align: middle;
 }
 
 .nav-desktop {

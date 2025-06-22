@@ -528,11 +528,14 @@ nav {
 }
 
 .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative; /* keep this for .quote-icon positioning */
     background: white;
     border-radius: 16px;
     padding: 32px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 .quote-icon {

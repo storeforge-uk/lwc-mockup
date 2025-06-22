@@ -1044,7 +1044,7 @@ nav {
     color: var(--gold);
 }
 
-/* ====== Tablet: Up to 1024px ====== */
+/* ========== Tablet: Up to 1024px ========== */
 @media (max-width: 1024px) {
   .footer-content {
     grid-template-columns: 1fr 1fr;
@@ -1056,8 +1056,13 @@ nav {
   }
 }
 
-/* ====== Mobile: Up to 768px ====== */
+/* ========== Mobile: Up to 768px ========== */
 @media (max-width: 768px) {
+  /* General container padding */
+  .container {
+    padding: 0 16px;
+  }
+
   /* Footer layout */
   .footer-content {
     grid-template-columns: 1fr;
@@ -1073,42 +1078,51 @@ nav {
     justify-content: center;
   }
 
-  /* General container padding */
-  .container {
-    padding: 0 16px;
-  }
-
-  /* Grid sections */
+  /* Grid sections go single column */
   .activities-grid,
   .testimonials-grid,
   .booking-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Booking help actions */
+  /* Booking help layout fix */
   .booking-help-actions {
     flex-direction: column;
     align-items: center;
     gap: 16px;
   }
 
-  /* Carousel adjustments */
+  /* Carousel item size */
   .carousel-item {
     flex: 0 0 280px;
   }
+
+  /* Logo size */
+  .logo {
+    max-width: 120px;
+    height: auto;
+  }
 }
 
-/* ====== Small Mobile: Up to 480px ====== */
+/* ========== Small Mobile: Up to 480px ========== */
 @media (max-width: 480px) {
+  /* Full-width buttons */
   .hero-buttons,
   .btn-large {
     width: 100%;
     justify-content: center;
   }
 
+  /* Activities grid spacing */
   .activities-grid {
     grid-template-columns: 1fr;
     gap: 24px;
   }
+
+  /* Logo shrink further */
+  .logo {
+    max-width: 100px;
+  }
 }
+
 

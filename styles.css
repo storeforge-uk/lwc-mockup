@@ -380,6 +380,12 @@ nav {
     margin: 0 auto;
 }
 
+.cyprus-flag {
+  height: 2rem;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 /* Activities Section */
 .activities {
     padding: 80px 0;
@@ -712,13 +718,6 @@ nav {
 .booking-help-link:hover {
     color: white;
 }
-
-/* Contact Section */
-.contact {
-    padding: 80px 0;
-    background: var(--light-blue-gray);
-}
-
 
 /* Contact Section */
 .contact {

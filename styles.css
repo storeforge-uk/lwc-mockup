@@ -384,6 +384,7 @@ nav {
   height: 2rem;
   vertical-align: middle;
   margin-right: 8px;
+  border-radius: 4px;
 }
 
 /* Activities Section */

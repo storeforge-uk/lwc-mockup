@@ -542,7 +542,7 @@ nav {
 
 .quote-icon {
     position: absolute;
-    top: -40px;
+    top: -35px;
     left: 32px;
     font-size: 1.925rem;
     color: var(--gold);

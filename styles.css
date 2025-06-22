@@ -75,7 +75,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    height: 140px;
 }
 
 .logo {
@@ -187,10 +187,10 @@ nav {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 15px 32px;
+    padding: 12px 26px;
     border: none;
     border-radius: 50px;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     cursor: pointer;
     font-size: 1.25rem; /* should match .nav-link */
@@ -537,9 +537,9 @@ nav {
 
 .quote-icon {
     position: absolute;
-    top: -16px;
+    top: -40px;
     left: 32px;
-    font-size: 1.875rem;
+    font-size: 1.925rem;
     color: var(--gold);
 }
 

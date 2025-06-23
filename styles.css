@@ -1134,9 +1134,12 @@ nav {
   .hide-on-mobile {
     display: none !important;
   }
+
+@media (max-width: 768px) {
+  .hero-content {
+    margin-top: -40px;
+  }
 }
 
-
-}
 
 

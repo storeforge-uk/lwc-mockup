@@ -1,3 +1,23 @@
+// Prevent access on devices smaller than desktop width
+if (window.innerWidth < 1450) {
+    document.body.innerHTML = `
+      <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #0B2346;
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Poppins', sans-serif;
+      ">
+        Desktop preview only. Please use a desktop device to view this site.
+      </div>
+    `;
+}
+
 // Navigation scroll effect
 window.addEventListener('scroll', function() {
     const nav = document.getElementById('navigation');

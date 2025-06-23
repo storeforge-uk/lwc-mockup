@@ -1058,44 +1058,39 @@ nav {
 
 /* ========== Mobile: Up to 768px ========== */
 @media (max-width: 768px) {
-  .nav-container {
-    padding: 0 16px; /* Add horizontal padding */
-  }
-
   .logo-img {
-    height: 48px; /* Smaller logo */
+    height: 70px; /* Goldilocks size */
   }
 
-  .mobile-menu-btn {
-    font-size: 1.25rem; /* Reduce hamburger size */
-    margin-right: 8px;   /* Give it space from edge */
+  .nav-container {
+    padding: 0 20px; /* Adds space around logo and hamburger */
   }
 
   .nav-content {
-    height: 72px; /* Shorter nav height */
+    height: 100px; /* Reduce nav height a bit */
   }
 
   .hero-content {
-    padding-top: 80px; /* Clear space under navbar */
+    padding-top: 120px; /* Push hero text down from nav */
   }
 }
 
 @media (max-width: 480px) {
   .logo-img {
-    height: 42px;
-  }
-
-  .mobile-menu-btn {
-    font-size: 1.125rem;
-    margin-right: 4px;
+    height: 64px;
   }
 
   .nav-container {
-    padding: 0 12px;
+    padding: 0 16px;
+  }
+
+  .nav-content {
+    height: 90px;
   }
 
   .hero-content {
-    padding-top: 96px;
+    padding-top: 130px;
   }
 }
+
 

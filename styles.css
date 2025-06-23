@@ -1139,6 +1139,15 @@ nav {
   .hero-content {
     margin-top: -40px;
   }
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    margin-bottom: 24px;
+  }
+
+  .hero-info {
+    gap: 12px;
+  }
 }
 
 

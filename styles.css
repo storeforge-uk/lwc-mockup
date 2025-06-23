@@ -69,26 +69,26 @@ nav {
 .nav-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px; /* Add padding so logo and hamburger don't touch edges */
+    padding: 0 20px; /* Ensures padding on sides */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 .nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px; /* Fixed height for consistent spacing */
+    height: 100px;
 }
 
 .logo {
     display: flex;
     align-items: center;
     height: 80px;
-    margin-left: 0;
-    padding-left: 8px; /* Small left padding for logo */
+    padding-left: 8px; /* Padding to keep away from left edge */
 }
 
 .logo-img {
-    height: 80px; /* Adjust logo height */
+    height: 80px;
     width: auto;
     display: block;
     object-fit: contain;
@@ -96,7 +96,7 @@ nav {
 }
 
 .nav-desktop {
-    display: none; /* Hide desktop nav on tablet and smaller */
+    display: none; /* Hidden on tablet/mobile */
 }
 
 .nav-mobile {
@@ -110,6 +110,7 @@ nav {
     font-size: 1.5rem;
     cursor: pointer;
     transition: color 0.2s ease;
+    padding-right: 8px; /* Padding to keep away from right edge */
 }
 
 .mobile-menu-btn:hover {
@@ -119,12 +120,15 @@ nav {
 /* Hero Section */
 .hero {
     position: relative;
-    height: calc(100vh - 100px); /* Full viewport height minus navbar height */
+    height: calc(100vh - 100px); /* full height minus nav */
     display: flex;
-    align-items: flex-start; /* Align content to top */
+    align-items: flex-start; /* start top so text is below logo */
     justify-content: center;
     overflow: hidden;
-    padding-top: 20px; /* Extra padding so content not glued to navbar */
+    padding-top: 20px; /* space below nav */
+    padding-left: 20px;
+    padding-right: 20px; /* padding to avoid edges */
+    box-sizing: border-box;
 }
 
 .hero-content {
@@ -133,8 +137,8 @@ nav {
     text-align: center;
     color: white;
     max-width: 1000px;
-    padding: 0 20px;
-    margin-top: 0; /* Remove any margin to avoid extra space */
+    padding: 0;
+    margin-top: 0;
 }
 
 .hero-title {
@@ -172,12 +176,12 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px; /* Increase gap a bit */
+    gap: 24px;
     margin-bottom: 32px;
 }
 
 .btn-large {
-    padding: 20px 40px; /* Larger buttons */
+    padding: 20px 40px;
     font-size: 1.25rem;
 }
 
@@ -186,7 +190,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 48px;
-    font-size: 1rem; /* Larger font on tablet */
+    font-size: 1rem;
     opacity: 0.9;
 }
 
@@ -219,19 +223,21 @@ nav {
     .hero {
         height: calc(100vh - 100px);
         padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .hero-description {
-        font-size: 1.25rem; /* Larger description text */
+        font-size: 1.25rem;
     }
 
     .hero-info {
-        font-size: 1.125rem; /* Larger info text */
+        font-size: 1.125rem;
         gap: 32px;
     }
 
     .btn-large {
-        padding: 24px 48px; /* Even bigger buttons on tablet */
+        padding: 24px 48px;
         font-size: 1.3rem;
     }
 }
@@ -250,9 +256,15 @@ nav {
         height: 70px;
     }
 
+    .mobile-menu-btn {
+        padding-right: 8px; /* Keep hamburger off right edge */
+    }
+
     .hero {
         height: calc(100vh - 90px);
         padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .hero-description {
@@ -271,6 +283,7 @@ nav {
         font-size: 1.2rem;
     }
 }
+
 
 
 /* Hero Section */

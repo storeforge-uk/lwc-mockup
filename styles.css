@@ -1044,57 +1044,21 @@ nav {
     color: var(--gold);
 }
 
-/* ========== Tablet: Up to 1024px ========== */
+/* ================== Responsive Styles for Tablet and Mobile ================== */
+
+/* ========== Tablet & below (max-width: 1024px) ========== */
 @media (max-width: 1024px) {
-  .footer-content {
-    grid-template-columns: 1fr 1fr;
+  /* Navigation */
+  .nav-desktop {
+    display: none; /* Hide desktop nav */
   }
 
-  .footer-company {
-    grid-column: 1 / -1;
-    max-width: none;
-  }
-}
-
-/* ========== Mobile: Up to 768px ========== */
-@media (max-width: 768px) {
-  .logo-img {
-    height: 70px; /* Goldilocks size */
+  .nav-mobile {
+    display: block; /* Show hamburger menu */
   }
 
   .nav-container {
-    padding: 0 20px; /* Adds space around logo and hamburger */
-  }
-
-  .nav-content {
-    height: 100px; /* Reduce nav height a bit */
-  }
-
-  .hero-content {
-    padding-top: 120px; /* Push hero text down from nav */
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-img {
-    height: 64px;
-  }
-
-  .nav-container {
-    padding: 0 16px;
-  }
-
-  .nav-content {
-    height: 90px;
-  }
-
-  .hero-content {
-    padding-top: 130px;
-  }
-
-@media (max-width: 768px) {
-  .nav-container {
-    padding: 0 20px;
+    padding: 0 24px; /* Add horizontal padding for logo and hamburger */
   }
 
   .nav-content {
@@ -1103,22 +1067,112 @@ nav {
   }
 
   .logo-img {
+    height: 80px;
+    max-width: 170px;
+  }
+
+  /* Hero Section */
+  .hero-content {
+    padding-top: 120px; /* Push hero text down from nav */
+  }
+
+  .hero-description {
+    font-size: 1.25rem; /* Make description text larger */
+  }
+
+  .hero-buttons {
+    gap: 20px;
+  }
+
+  .btn-large {
+    font-size: 1.375rem;
+    padding: 18px 36px;
+  }
+
+  .hero-info {
+    font-size: 1rem; /* Larger font for open hours & phone */
+    gap: 16px;
+  }
+
+  .hero-info-item i {
+    font-size: 1.25rem;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-company {
+    grid-column: 1 / -1;
+    max-width: none;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========== Mobile (max-width: 768px) ========== */
+@media (max-width: 768px) {
+  /* Navigation */
+  .nav-container {
+    padding: 0 20px;
+  }
+
+  .nav-content {
+    height: 90px;
+    align-items: center;
+  }
+
+  .logo-img {
     height: 70px;
     max-width: 160px;
   }
 
+  /* Hero Section */
   .hero-content {
-    padding-top: 120px;
+    padding-top: 110px; /* Slightly less than tablet */
+  }
+
+  .hero-description {
+    font-size: 1.125rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .btn-large {
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 16px 0;
+  }
+
+  .hero-info {
+    font-size: 0.95rem;
+    gap: 12px;
+  }
+
+  .hero-info-item i {
+    font-size: 1.15rem;
+  }
+
+  /* Hide diving button on mobile */
+  .btn-secondary {
+    display: none;
   }
 }
 
+/* ========== Small Mobile (max-width: 480px) ========== */
 @media (max-width: 480px) {
   .nav-container {
     padding: 0 16px;
   }
 
   .nav-content {
-    height: 90px;
+    height: 80px;
   }
 
   .logo-img {
@@ -1127,28 +1181,32 @@ nav {
   }
 
   .hero-content {
-    padding-top: 130px;
+    padding-top: 100px;
   }
 
-@media (max-width: 768px) {
-  .hide-on-mobile {
-    display: none !important;
-  }
-
-@media (max-width: 768px) {
-  .hero-content {
-    margin-top: -40px;
-  }
-
-@media (max-width: 768px) {
-  .hero-buttons {
-    margin-bottom: 24px;
+  .hero-description {
+    font-size: 1rem;
   }
 
   .hero-info {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  .hero-info-item i {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
     gap: 12px;
   }
+
+  .btn-large {
+    font-size: 1.1rem;
+    padding: 14px 0;
+  }
 }
+
 
 
 
